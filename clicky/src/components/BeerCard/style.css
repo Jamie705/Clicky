@@ -1,0 +1,29 @@
+.card {
+  background: #fff;
+  border-radius: 10px;
+  margin: 25px;
+  position: relative;
+  box-shadow: 0 3px 6px #999, 0 3px 6px #999;
+  text-align: center;
+  padding: 15px;
+  width: 25%;
+}
+
+.card > .content {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-size: 25px;
+}
+
+.card > .remove {
+  color: #ff1744;
+  font-size: 25px;
+  position: absolute;
+  top: -20px;
+  right: 5px;
+  cursor: pointer;
+}
+
+.card > .remove:hover {
+  color: #d50000;
+}

@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "name": "Corona",
+    "image": "https://cheers.com.np/uploads/products/1598697173446345494286468571485531160528.png"
+  },
+  {
+    "id": 2,
+    "name": "SamAdams",
+    "image": "http://www.luekensliquors.com/images/st-patricks-beer-sam-adams-boston-lager-.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Heineken",
+    "image": "https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1547070078-ci-heineken-non-alcoholic-266c99e0f4a2f50d.jpg"
+  }, 
+  {
+    "id": 4,
+    "name": "Sol",
+    "image": "https://brewbound.co.nz/content/images/thumbs/0001861_sol-beer-12-pack-bottles_550.png"
+  }, 
+  {
+    "id": 5,
+    "name": "Blue Moon",
+    "image": "https://www.myamericanmarket.com/586-large_default/blue-moon-beer-bottle.jpg"
+  }, 
+  {
+    "id": 6,
+    "name": "CoorsLight",
+    "image": "https://www.myamericanmarket.com/588-large_default/coors-light-beer-bottle.jpg"
+  }, 
+  {
+    "id": 7,
+    "name": "Duff",
+    "image": "https://www.myamericanmarket.com/589-large_default/duff-beer-bottle.jpg"
+  }, 
+  {
+    "id": 8,
+    "name": "Budweiser",
+    "image": "https://www.myamericanmarket.com/587-large_default/budweiser-beer-bottle.jpg"
+  },
+  {
+    "id": 9,
+    "name": "Bleue",
+    "image": "https://www.myamericanmarket.com/10802-large_default/labatt-bleue-canadian-beer.jpg"
+  }
+]
