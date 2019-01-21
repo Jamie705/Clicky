@@ -12,7 +12,7 @@
   {
     "id": 3,
     "name": "Heineken",
-    "image": "https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1547070078-ci-heineken-non-alcoholic-266c99e0f4a2f50d.jpg"
+    "image": "https://cheers.com.np/uploads/products/038120097481444129218106701191341013324588861.png"
   }, 
   {
     "id": 4,
@@ -43,5 +43,10 @@
     "id": 9,
     "name": "Bleue",
     "image": "https://www.myamericanmarket.com/10802-large_default/labatt-bleue-canadian-beer.jpg"
-  }
+  },
+    {
+      "id": 10,
+      "name": "Bush",
+      "image": "https://images.freshop.com/00018200000706/b2f90e0eda6c2c0b024c61cfaaefd469_medium.png"
+    }
 ]

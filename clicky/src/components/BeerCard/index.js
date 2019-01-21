@@ -3,14 +3,15 @@ import "./style.css";
 
 function BeerCard(props) {
   return (
-    < div className="card" width="300px" >
-      < img alt = {
+    <div>
+      < img className="cards" alt = {
         props.name
       }
       src = {
         props.image
       }
       width = "200px"
+      height = "215px"
       value = {
         props.id
       }
@@ -19,13 +20,13 @@ function BeerCard(props) {
         props.clickedBeer(props.id)
       }
       />
-      <div className="card-body">
+      {/* <div className="card-body">
         <p className="card-text">
           <strong>Name:</strong> {
             props.name
             }
         </p>
-      </div>
+      </div> */}
     </div>
   );
 }
