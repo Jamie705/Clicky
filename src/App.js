@@ -29,6 +29,7 @@ class App extends Component {
   //When beer is clicked
   clickedBeer = id => {
     const clickedBeers = this.state.clicked;
+    
     //keeping score
     this.keepScore();
     
@@ -109,7 +110,10 @@ class App extends Component {
     
     return (
       <div>
-        <Nav>Tricky Clicky Beer Game<br></br>Score: {this.state.score} <br></br> High Score: {this.state.bestScore}</Nav>
+        <Nav>Tricky Clicky Beer Game<br></br>
+        Score: {this.state.score}<br></br> 
+        High Score: {this.state.bestScore}
+        </Nav>
         <Wrapper>
           < Title >{this.winner()}</Title>
           {this.state.beer.map(beer => (

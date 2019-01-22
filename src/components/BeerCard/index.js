@@ -20,13 +20,6 @@ function BeerCard(props) {
         props.clickedBeer(props.id)
       }
       />
-      {/* <div className="card-body">
-        <p className="card-text">
-          <strong>Name:</strong> {
-            props.name
-            }
-        </p>
-      </div> */}
     </div>
   );
 }
