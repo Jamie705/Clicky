@@ -12,7 +12,8 @@ class App extends Component {
     beer,
     score: 0,
     bestScore: 0,
-    clicked: []
+    clicked: [],
+    message: ""
   };
 
   shuffleArray = (array) => {
@@ -29,7 +30,8 @@ class App extends Component {
   //When beer is clicked
   clickedBeer = id => {
     const clickedBeers = this.state.clicked;
-    
+    this.resetMessage();
+
     //keeping score
     this.keepScore();
     
@@ -40,7 +42,7 @@ class App extends Component {
 
     this.shuffleArray(beer);
 
-      //if the id has already been clicked
+      //if the id has not been clicked
       if (clickedBeers.indexOf(id) === -1) {
           clickedBeers.push(id);
             console.log("Id has NOT been clicked :"
@@ -55,54 +57,63 @@ class App extends Component {
         this.state.score, clickedBeers
         )
           //reseting the score and clicked array and gennerate Win message.
-          this.winner();
+          this.setState({
+            message: "You Win!!!"
+          });
+
           this.resetScore();
+          this.resetMessage();
       }
       // clicked on beer twice game is lost
       else {
         console.log("Sorry that beer has been clicked already. You lost" 
         + this.state.score, clickedBeers
         )
+          this.setState({
+            message: "Sorry, you Lost!!!"
+          });
           //reseting the score and clicked array
           this.resetScore();
+          this.resetMessage();
+                 
         };
       };
 
   //function to reset score and clicked array 
   resetScore = () => {
     this.setState({
-      score: 0
-    });
-    this.setState({
-      clicked: []
+      score: 0,
+      clicked: [],
     });
   }
 
-  //function to keep score
+  resetMessage = () => {
+    if (this.state.score === 0){
+      this.setState({
+        message: " "
+      });
+    }
+  }
+  //function to keep Higest score
   keepScore =()=> {
-    var highScore = 0;
+    var highScore = this.state.bestScore
     const currentScore = this.state.score
 
-    if (highScore < currentScore) {
+    if (currentScore > highScore) {
+      //update score
       highScore = currentScore;
+
+      this.setState({
+        bestScore: highScore
+      });
+    }
+    else {
+      highScore =  this.state.bestScore;
       //update score
       this.setState({
         bestScore: highScore
       });
     }
-    else if (highScore > this.state.bestScore) {
-      //update score
-      highScore = this.state.bestScore;
-    
-      console.log("HighScore: " + highScore, "Score: " + this.state.bestScore)
-    }
-  }
-
-  //function to message winner
-  winner = () => {
-  const message= "Winner Winner!!"
-  console.log(message)
-  return message;
   }
 
   // Map over this.state.beer and render a BeerCard component for each beer object
@@ -115,7 +126,7 @@ class App extends Component {
         High Score: {this.state.bestScore}
         </Nav>
         <Wrapper>
-          < Title >{this.winner()}</Title>
+          < Title >{this.state.message}</Title>
           {this.state.beer.map(beer => (
             <BeerCard
               shuffleArray = {this.shuffleArray(beer)}
