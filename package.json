@@ -1,7 +1,7 @@
 {
   "name": "clicky",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "homepage": "https://jamie705.github.io/ClickyMemory/",
   "dependencies": {
     "gh-pages": "^2.0.1",
