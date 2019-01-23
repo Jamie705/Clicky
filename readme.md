@@ -1,8 +1,8 @@
-# ClickyMemory
+# Clicky
 Memory Game using react
 
 Go to:
-https://jamie705.github.io/ClickyMemory/
+https://jamie705.github.io/Clicky/
 to check out my app!
 
 ### Overview
