@@ -3,7 +3,7 @@
   background: #ECEFF1;
   display: flex;
   flex-flow: row wrap;
-  padding: 20px;
+  padding: 20px 300px;
   justify-content: center;
   overflow: auto;
 }
