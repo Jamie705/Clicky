@@ -66,11 +66,11 @@ class App extends Component {
       }
       // clicked on beer twice game is lost
       else {
-        console.log("Sorry that beer has been clicked already. You lost" 
+        console.log("Sorry....you lost. Game Over." 
         + this.state.score, clickedBeers
         )
           this.setState({
-            message: "Sorry, you Lost!!!"
+            message: "Sorry, you already clicked on that beer! You Lost!!!"
           });
           //reseting the score and clicked array
           this.resetScore();
